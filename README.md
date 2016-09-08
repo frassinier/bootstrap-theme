@@ -31,7 +31,7 @@ npm install --save bootstrap-tlnd-theme
 Create your `_colors.scss` file and fill it with your own color set.
 
 ```sass
-/// Primary color, mostly used for the selected elements 
+/// Primary color, mostly used for the selected elements
 /// and to draw attention to the important elements of interaction.
 ///
 /// @type Color
@@ -93,3 +93,12 @@ npm install
 npm start
 ```
 Open [http://localhost:8080/](http://localhost:8080/) to see your changes.
+
+## Frontify
+
+In order to deploy Bootstrap patterns you must
+
+* Create _.env_ file at root
+* Add `FRONTIFY_ACCESS_TOKEN` property
+* Add `FRONTIFY_PROJECT_ID` property
+* Run `npm run frontify:bootstrap`

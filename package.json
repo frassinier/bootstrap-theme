@@ -9,7 +9,8 @@
     "scripts": {
         "prepublish": "webpack",
         "start": "webpack-dev-server",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "frontify:bootstrap": "node ./node_modules/frontify-bootstrap/index.js"
     },
     "repository": {
         "type": "git",
@@ -27,8 +28,10 @@
     "homepage": "https://github.com/Talend/bootstrap-theme#readme",
     "devDependencies": {
         "css-loader": "^0.23.1",
+        "dotenv": "^2.0.0",
         "extract-text-webpack-plugin": "^1.0.1",
         "file-loader": "^0.9.0",
+        "frontify-bootstrap": "github:frassinier/frontify-bootstrap",
         "node-sass": "^3.8.0",
         "path": "^0.12.7",
         "sass-loader": "^4.0.0",
